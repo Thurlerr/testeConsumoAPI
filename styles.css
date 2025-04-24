@@ -1,0 +1,14 @@
+#postOutput {
+    border: 3px solid black;
+    width: 30%;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#heroDesc {
+    font-size: 15px;
+    margin-top: 0px;
+}
+#hero {
+    margin-bottom: 0px;
+}

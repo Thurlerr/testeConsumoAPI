@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
-        <h1>API: </h1>
+        <h1 id="hero">API: {JSON} Placeholder:</h1>
+        <p id="heroDesc">Free fake and reliable API for testing and prototyping.</p>
         <h2>O que a API faz?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur </p>
+        <p>A API fornece dados falsos para praticar requisições de API. <br>
+            Os dados não são realmente salvos, a requisição via POST abaixo é apenas simulada e tem a resposta temporária da API inserida na DOM.
+        </p>
+    </div>
 
-        <form action="">Insira aqui um dado para adicionar</form>
+    <div id="createTaskForm">
+        <form action="">
+            <label for="taskId">ID:</label>
+            <input type="text" id="taskId">
+            <label for="taskTitle">Tarefa:</label>
+            <input type="text" id="taskTitle">
+            <label for="taskStatus">Status:</label>
+            <input type="text" id="taskStatus">
+            <button id="createTaskBtn">Criar tarefa</button>
+        </form>
+    </div>
+    
+    <div>
+        <p>Buscar na lista de tarefas</p>
+        <input type="text" id="inputId" placeholder="ID:" style="width: 30px;">
+        <button id="searchBtn">Buscar</button>
     </div>
 </body>
 </html>
